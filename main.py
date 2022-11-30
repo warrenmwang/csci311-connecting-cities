@@ -121,4 +121,7 @@ if __name__ == '__main__':
     print("==================")
 
     print(f"Entire program took {time.time() - entire_prog_start}")
+
+   # MST3 = Graph()
+   # min_dist3, MST3 = Prims_Algo_1(MST3, graph)
     
