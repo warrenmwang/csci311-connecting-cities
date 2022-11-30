@@ -80,6 +80,11 @@ if __name__ == '__main__':
     
     print(f"Baseline Comparison - Adding all weights together: {sum_all_weights}")
 
+    # I'm curious about graph density
+    totAvgNeighbors = 0
+    for v in graph.vertices.keys():
+        totAvgNeighbors += len(graph.vertices[v].neighbors)
+    print(f"Average Vertex Degree: {totAvgNeighbors / len(graph.vertices.keys())}")
 
     # kruskal's
     # hand checked against test.txt, good

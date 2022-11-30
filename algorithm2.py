@@ -75,10 +75,20 @@ def Prims_Algo(mst, graph):
   
 
   return minDist, mst
-  
-  
+
+
+# TODO: Implement Priority Queue, probably using a minimum binary heap
 
     
       
+def Prims_Algo_2(mst, graph):
+    totalVertices = len(graph.vertices) #total number of vertices
+    allEdges = graph.edges #store a list of all vertices to use later
+    minDist = 0 #will be returned at the end
+    curr_mst_size = 0
 
-  
+    # to reduce from O(VE) need to maintain distance estimate from any node to current building tree
+    
+
+    while curr_mst_size < totalVertics - 1:
+        pass
