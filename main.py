@@ -78,14 +78,20 @@ if __name__ == '__main__':
             graph.add_edge(int(inp[0]), int(inp[1]), int(inp[2]), float(inp[3]))
             sum_all_weights += float(inp[3])
     
-    print(f"Baseline Comparison - Adding all weights together: {sum_all_weights}")
+    # basic graph info
+    graph_vertices = len(graph.vertices)
+    graph_edges = len(graph.edges)
 
     # I'm curious about graph density
     totAvgNeighbors = 0
     for v in graph.vertices.keys():
         totAvgNeighbors += len(graph.vertices[v].neighbors)
-    print(f"Average Vertex Degree: {totAvgNeighbors / len(graph.vertices.keys())}")
 
+    print(f"Vertices: {graph_vertices}\nEdges: {graph_edges}")
+    print(f"Average Vertex Degree: {totAvgNeighbors / len(graph.vertices.keys())}")
+    print(f"Baseline Comparison - Adding all weights together: {sum_all_weights}")
+    ##########################
+    
     # kruskal's
     # hand checked against test.txt, good
     MST1 = Graph()

@@ -77,6 +77,9 @@ def Prims_Algo(mst, graph):
   return minDist, mst
 
 
+# priority queue
+
+
 # TODO: Implement Priority Queue, probably using a minimum binary heap
 
     
